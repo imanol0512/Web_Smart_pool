@@ -21,9 +21,11 @@ body a{
 	margin-top: 2.5em;
 }
 .logo img {
-    width: 150px; /* Cambia el ancho de la imagen a 120px */
-    height: auto; /* Altura se ajusta automáticamente manteniendo la relación de aspecto */
+    width: 150px;
+    height: auto;
+    background: url('../images/Logo.png') no-repeat;
 }
+
 /*----navbar-nav----*/
 .top-nav ul li a{
 	color: #394346;
