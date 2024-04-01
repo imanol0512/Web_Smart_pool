@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>My smart Pool</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
+<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+</head>
+<body>
+		<div id="home" class="header scroll">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="My smart pool" /></a>
+				</div>
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">Inicio</a></li>
+						<li class="page-scroll"><a href="#fea" class="scroll">Funciones</a></li>
+						<li class="page-scroll"><a href="#blog" class="scroll">Extras</a></li>
+						<li class="page-scroll"><a href="#test" class="scroll">Desarrolladores</a></li>
+						<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">Descargar</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"> </div>
+				<div class="slide-text text-center">
+					<h1>My Smart poll</h1>
+					<span>Cuida tu piscina</span>
+					<a class="slide-btn" href="#">Descargar</a>
+				</div>
+			</div>
+		</div>
+		<div id="fea" class="features">
+			<div class="container">
+				<div class="head text-center">
+					<h3> ¿Que somos?</h3>
+					<p>¡Bienvenido a My Smart Pool! Somos la solución móvil definitiva para el control 
+						inteligente de tu piscina. Con nuestra aplicación, podrás mantener tu piscina 
+						en óptimas condiciones desde la palma de tu mano.</p>
+				</div>
+				<div class="features-grids text-center">
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-tint"> </i> </span>
+						<h3><a href="#">PH</a></h3>
+						<p>Descubre el equilibrio perfecto con solo un toque. My Smart Pool te 
+							permite medir el pH de tu piscina, asegurando un entorno limpio y 
+							saludable para disfrutar.</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-leaf"> </i> </span>
+						<h3><a href="#">TDS</a></h3>
+						<p>Conoce la calidad del agua al instante. Nuestra aplicación te ofrece 
+							mediciones precisas de TDS, garantizando una experiencia de 
+							natación segura y placentera.</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-fire"> </i> </span>
+						<h3><a href="#">Temp.</a></h3>
+						<p>No te sorprendas con cambios bruscos. My Smart Pool te mantiene informado 
+							sobre la temperatura del agua, para que puedas disfrutar de un chapuzón 
+							perfectamente templado en todo momento.</p>
+					</div>
+					<div class="col-md-3 features-grid">
+						<span class="fea-icon1"><i class="fa fa-lightbulb-o"> </i> </span>
+						<h3><a href="#">Control de Luces</a></h3>
+						<p>Crea la atmósfera ideal con un simple deslizamiento. Con nuestra aplicación
+							, puedes controlar las luces de tu piscina actomaticamente o manualmente , transformando tu espacio en 
+							un oasis nocturno con solo unos pocos clics.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="work">
+			<div class="container">
+				<div class="head text-center work-head">
+					<h3> Como funcionamos</h3>
+					<p>My Smart Pool, donde la magia se mezcla con la tecnología para crear el oasis perfecto en tu piscina. Descubre cómo funciona nuestra aplicación en solo tres pasos.</p>
+				</div>
+				<div class="work-grids">
+					<div class="col-md-4 work-grid">
+						<span class="col-md-5 w-icon"> <i class="fa fa-cogs"> </i></span>
+						<div class="col-md-7 work-info">
+							<h4>Encanto en el Agua</h4>
+							<p>Los sensores en tu piscina trabajan como pequeños hechiceros, midiendo constantemente el pH, 
+								TDS y temperatura del agua. </p>
+						</div>
+					</div>
+					<div class="col-md-4 work-grid center-work-grid">
+						<span class="col-md-5 w-icon"> <i class="fa fa-location-arrow"> </i></span>
+						<div class="col-md-7 work-info">
+							<h4>Viaje Mágico de Datos</h4>
+							<p>Como píxeles de magia, los datos se deslizan por el éter digital desde los sensores hasta tu teléfono, 
+								llevando consigo los secretos de tu piscina para que los descubras con un simple toque.</p>
+						</div>
+					</div>
+					<div class="col-md-4 work-grid">
+						<span class="col-md-5 w-icon"><i class="fa fa-eye"> </i> </span>
+						<div class="col-md-7 work-info">
+							<h4>Consulta Encantada</h4>
+							<p>Abre la puerta a un mundo de maravillas con un toque en tu teléfono. Desde los niveles de pH hasta la temperatura del agua y el brillo de las luces, 
+								todo está al alcance de tu mano, convirtiendo tu teléfono en una varita mágica para tu piscina.</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="work-map">
+						<span> </span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="blog" class="blog">
+			<div class="container">
+				<div class="head text-center">
+					<h3> Funciones Extras</h3>
+					<p>Tu aliado en el mantenimiento de piscinas que hace que cuidar tu oasis 
+						acuático sea más sencillo y conveniente. Descubre mas acciones cómo 
+						nuestra aplicación integra funciones prácticas para garantizar que tu 
+						piscina esté siempre en su mejor estado. </p>
+				</div>
+			</div>
+			
+			<div class="blog-time-line">
+				<div class="col-md-6 blog-time-line-left">
+				</div>
+				<div class="col-md-6 blog-time-line-right">
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>1</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<h4 class="post-head"><a href="#">Registro de limpieza </a></h4>
+							<p>Registra la fecha de cada limpieza para un seguimiento efectivo del mantenimiento y una piscina siempre impecable</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>2</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<h4 class="post-head"><a href="#">Control de Luces Inteligentes </a></h4>
+							<p>Ajusta las luces de tu piscina de forma automática o manual, creando el ambiente perfecto para cada ocasión con un simple toque. </p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>3</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<h4 class="post-head"><a href="#"> Monitoreo en Tiempo Real </a></h4>
+							<p>Accede instantáneamente a los datos vitales de tu piscina, como pH y temperatura, en tiempo real, brindándote el control absoluto estés donde estés.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post">
+						<div class="col-md-2 blog-post-date">
+							<span><label>4</label></span>
+						</div>
+						<div class="col-md-10 blog-post-info">
+							<h4 class="post-head"><a href="#">Inicio de sesión seguro</a></h4>
+							<p>Tanto tu como tu cliente podran tener un entorno totalmente seguro </p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="blog-post-time-line-connector">
+						<span> </span>
+					</div>
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>
+		<div  id="test" class="testmonials">
+			<div class="container">
+				<div class="head text-center">
+						<h3>Desarrolladores</h3>
+						<p>Esta applicacion fue desarrollada por ingenerios abilidosos y entregados para obtener una app de gran utilidad para las personas con psicinas en casa </p>
+				</div>
+			<div class="test-monial-time-line">
+				<div class="col-md-6 test-monial-time-line-left">
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-l1">
+						<div class="col-md-9 test-monial-time-line-left-text">
+							<p>Ingenerio en Desarrollo de software y profesional en mecatronica
+								Estudiante de la Universidad Tecnologica de Tlaxcala 
+							</p>
+						</div>
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							<img src="images/usuario.png" title="name" />
+							<a href="https://www.facebook.com/AdrusElric">Derek E.A.</a>
+						</div>
+						<span class="grid-point"> </span>
+						
+					</div>
+					
+				</div>
+				<div class="col-md-6 test-monial-time-line-right">
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-r1">
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							<img src="images/usuario.png" title="name" />
+							<a href="https://www.facebook.com/profile.php?id=100021566799756">Laura H.</a>
+						</div>
+						<div class="col-md-9 test-monial-time-line-left-text">
+							<p>Ingenerio en Desarrollo de software
+								Estudiante de la Universidad Tecnologica de Tlaxcala </p>
+						</div>
+						<span class="grid-point grid-point1"> </span>
+					</div>
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-r2">
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							<img src="images/usuario.png" title="name" />
+							<a href="#">Ignacio F.</a>
+						</div>
+						<div class="col-md-9 test-monial-time-line-left-text">
+							<p>Ingenerio en Desarrollo de software 
+								Estudiante de la Universidad Tecnologica de Tlaxcala </p>
+						</div>
+						<span class="grid-point grid-point1"> </span>
+						
+					</div>
+					
+					<div class="clearfix"> </div>
+					
+				</div>
+				
+				<div class="test-monial-timeline-connector">
+					<span> </span>
+					
+				</div>
+				<div class="col-md-6 test-monial-time-line-left">
+					<div class="test-monial-time-line-grid test-monial-time-line-grid-l1">
+						<div class="col-md-9 test-monial-time-line-left-text">
+							<p>Ingenerio en Desarrollo de software
+								Estudiante de la Universidad Tecnologica de Tlaxcala 
+							</p>
+						</div>
+						<div class="col-md-3 test-monial-time-line-left-pic">
+							<img src="images/usuario.png" title="name" />
+							<a href="https://www.facebook.com/imanol.sanchez.961556">Imanol S.</a>
+						</div>
+						<span class="grid-point"> </span>
+						
+					</div>
+			</div>
+			
+		</div>
+		<div class="clearfix"> </div>
+		
+</body>
+</html>
+
+
+
